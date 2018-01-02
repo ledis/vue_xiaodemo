@@ -1,4 +1,4 @@
-# vuex-all
+# vuex-初体验
 
 > A Vue.js project
 
