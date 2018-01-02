@@ -1,0 +1,52 @@
+<template>
+	<div class="nav">
+		<ul>
+			<router-link tag="li" to="/home" active-class="active">
+				<a href="javascript:;">首页</a>
+			</router-link>
+			<router-link to="/follow" tag="li" active-class="active">
+    		<a href="javascript:;">关注</a>
+    	</router-link>
+    	<router-link to="/column" tag="li" active-class="active">
+    		<a href="javascript:;">栏目</a>
+    	</router-link>
+		</ul>
+	</div>
+</template>
+<script>
+export default{
+
+}
+</script>
+<style scoped> 
+.nav{
+	width:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:2;
+	background:#fff;
+}
+.nav ul{
+	width:4.38rem;
+	height:0.6rem;
+	margin:0 auto;
+}
+.nav li{
+	width:1.46rem;
+	height:0.6rem;
+	line-height:0.6rem;
+	float:left;
+	text-align: center;
+	box-sizing:border-box;
+}
+.nav li a{
+	display:block;
+	width:1.46rem;
+	height:0.6rem;
+	font-size:0.3rem;
+	color:#9e9a95;
+	text-decoration: none;
+}
+.nav li.active a{height:0.6rem; border-bottom:0.1rem solid #5477b2; color:#5477b2;}
+</style>
